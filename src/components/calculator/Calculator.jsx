@@ -7,6 +7,8 @@ import {
   StyledTopDiv,
 } from "./StyledCalculator";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export const Calculator = () => {
   return (
     <StyledMainDiv>
