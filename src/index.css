@@ -1,13 +1,35 @@
+@font-face {
+  font-family: "HEADING";
+  src: local("HEADING"),
+    url("./styles/fonts/DMSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TEXT";
+  src: local("TEXT"),
+    url("./styles/fonts/DMSans-ExtraLight.ttf") format("truetype");
+}
+
+:root {
+  --brandbookColorA: #000000;
+  --brandbookColorB: #777777;
+  --brandbookColorC: #ffffffff;
+  --brandbookColorD: #2939c2;
+  --brandbookColorE: #77ffed;
+  --brandbookColorF: #1f1d26;
+  --brandbookGradient: #2f2d88, #1f1d26;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
