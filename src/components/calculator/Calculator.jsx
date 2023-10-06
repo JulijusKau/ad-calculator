@@ -7,9 +7,12 @@ import {
   StyledOptionsDivRight,
   StyledOptionsRow,
   StyledReusableButton,
+  StyledSocialMediaHeader,
   StyledSocialMediaName,
   StyledTopDiv,
 } from "./StyledCalculator";
+
+import "./socialMediaDivBackground.css";
 
 import {
   faFacebook,
@@ -23,7 +26,10 @@ export const Calculator = () => {
     <StyledMainDiv>
       <StyledTopDiv>
         <StyledOptionsDivLeft></StyledOptionsDivLeft>
-        <StyledOptionsDivRight>
+        <StyledOptionsDivRight className="wrapper">
+          <StyledSocialMediaHeader>
+            Choose Your Social Media Outlet
+          </StyledSocialMediaHeader>
           <StyledOptionsRow>
             <StyledFontAwesomeIcon icon={faFacebook} />
             <StyledSocialMediaName>Facebook</StyledSocialMediaName>

@@ -19,9 +19,8 @@
   --brandbookColorF: #1f1d26;
   --brandbookGradient: #2f2d88, #1f1d26;
   --mainPaddingLeftRight: 5%;
-}
-
-html {
+  --mainMarginBottom: 7%;
+  --mainBorderRadius: 10px;
 }
 
 body {

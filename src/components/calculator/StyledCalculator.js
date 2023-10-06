@@ -9,7 +9,6 @@ export const StyledMainDiv = styled.div`
 
 export const StyledTopDiv = styled.div`
   /* background-color: gray; */
-  height: 600px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -31,10 +30,26 @@ export const StyledOptionsRow = styled.div`
 `;
 
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  width: min(30vw, 80px);
-  height: min(30vw, 80px);
+  width: min(30vw, 60px);
+  height: min(30vw, 60px);
   padding: 10px 0;
   color: var(--brandbookColorC);
+  @media (max-width: 540px) {
+    width: min(30vw, 35px);
+    height: min(30vw, 35px);
+  }
+`;
+
+export const StyledSocialMediaHeader = styled.span`
+  font-family: "HEADING";
+  font-size: 44px;
+  color: var(--brandbookColorC);
+  text-shadow: 3px 3px 0 var(--brandbookColorA);
+  text-align: left;
+  padding-bottom: 20px;
+  @media (max-width: 540px) {
+    font-size: 20px;
+  }
 `;
 
 export const StyledSocialMediaName = styled.span`
@@ -45,33 +60,44 @@ export const StyledSocialMediaName = styled.span`
   transition: color 1s ease;
   ${StyledFontAwesomeIcon}:hover + & {
     color: var(--brandbookColorC);
+    text-shadow: 3px 3px 0 var(--brandbookColorA);
+  }
+  @media (max-width: 540px) {
+    font-size: 15px;
+    padding: 5px;
   }
 `;
 
 export const StyledOptionsDivRight = styled.div`
-  width: 32%;
+  max-width: 32%;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  border: 2px solid var(--brandbookColorC);
+  border-radius: var(--mainBorderRadius);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 20px;
+  margin-bottom: var(--mainMarginBottom);
 
-  & ${StyledOptionsRow}:nth-child(1) ${StyledFontAwesomeIcon} :hover {
-    cursor: pointer;
-    transition: color 1s ease-in-out;
-    color: #4267b2;
-  }
   & ${StyledOptionsRow}:nth-child(2) ${StyledFontAwesomeIcon} :hover {
     cursor: pointer;
-    transition: color 1s ease-in-out;
-    color: #f56040;
+    transition: color 0.5s ease-in-out;
+    color: #4267b2;
   }
   & ${StyledOptionsRow}:nth-child(3) ${StyledFontAwesomeIcon} :hover {
     cursor: pointer;
-    transition: color 1s ease-in-out;
-    color: #1da1f2;
+    transition: color 0.5s ease-in-out;
+    color: #f56040;
   }
   & ${StyledOptionsRow}:nth-child(4) ${StyledFontAwesomeIcon} :hover {
     cursor: pointer;
-    transition: color 1s ease-in-out;
+    transition: color 0.5s ease-in-out;
+    color: #1da1f2;
+  }
+  & ${StyledOptionsRow}:nth-child(5) ${StyledFontAwesomeIcon} :hover {
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
     color: #000000;
   }
 `;
