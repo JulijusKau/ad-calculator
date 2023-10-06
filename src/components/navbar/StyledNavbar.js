@@ -9,5 +9,8 @@ export const StyledNavbar = styled.nav`
 `;
 
 export const StyledNavbarLogo = styled.img`
-  width: min(50vw, 300px);
+  width: min(50vw, 240px);
+  @media (max-width: 650px) {
+    width: min(50vw, 150px);
+  }
 `;

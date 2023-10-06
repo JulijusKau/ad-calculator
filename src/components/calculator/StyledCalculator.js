@@ -30,49 +30,49 @@ export const StyledOptionsRow = styled.div`
 `;
 
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  width: min(30vw, 60px);
-  height: min(30vw, 60px);
+  width: min(30vw, 50px);
+  height: min(30vw, 50px);
   padding: 10px 0;
   color: var(--brandbookColorC);
-  @media (max-width: 540px) {
+  @media (max-width: 650px) {
     width: min(30vw, 35px);
     height: min(30vw, 35px);
   }
 `;
 
 export const StyledSocialMediaHeader = styled.span`
-  font-family: "HEADING";
-  font-size: 44px;
+  font-family: "TEXT";
+  font-size: 25px;
   color: var(--brandbookColorC);
-  text-shadow: 3px 3px 0 var(--brandbookColorA);
+  /* text-shadow: 3px 3px 0 var(--brandbookColorA); */
   text-align: left;
   padding-bottom: 20px;
-  @media (max-width: 540px) {
-    font-size: 20px;
+  @media (max-width: 650px) {
+    font-size: 15px;
   }
 `;
 
 export const StyledSocialMediaName = styled.span`
-  font-family: "HEADING";
-  font-size: 32px;
-  padding: 0 20px;
+  font-family: "TEXT";
+  font-size: 23px;
+  padding: 0 0 0 10px;
   color: transparent;
   transition: color 1s ease;
   ${StyledFontAwesomeIcon}:hover + & {
     color: var(--brandbookColorC);
     text-shadow: 3px 3px 0 var(--brandbookColorA);
   }
-  @media (max-width: 540px) {
-    font-size: 15px;
+  @media (max-width: 650px) {
+    font-size: 13px;
     padding: 5px;
   }
 `;
 
 export const StyledOptionsDivRight = styled.div`
-  max-width: 32%;
+  width: 25%;
   display: flex;
   flex-direction: column;
-  border: 2px solid var(--brandbookColorC);
+  border: 0px solid var(--brandbookColorD);
   border-radius: var(--mainBorderRadius);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
