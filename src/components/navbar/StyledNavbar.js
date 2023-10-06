@@ -5,9 +5,9 @@ export const StyledNavbar = styled.nav`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px 20%;
+  padding: 20px 20% 80px 20%;
 `;
 
 export const StyledNavbarLogo = styled.img`
-  width: min(50vw, 200px);
+  width: min(50vw, 300px);
 `;

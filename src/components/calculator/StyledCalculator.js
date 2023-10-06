@@ -1,16 +1,15 @@
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const StyledMainDiv = styled.div`
   padding: 20px var(--mainPaddingLeftRight);
-  background-color: red;
-  border: 5px solid black;
   display: flex;
   flex-direction: column;
 `;
 
 export const StyledTopDiv = styled.div`
-  background-color: gray;
-  height: 400px;
+  /* background-color: gray; */
+  height: 600px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,11 +24,63 @@ export const StyledBottomDiv = styled.div`
   justify-content: space-between;
 `;
 
-export const StyledOptionsDiv = styled.div`
+export const StyledOptionsRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
+export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
+  width: min(30vw, 80px);
+  height: min(30vw, 80px);
+  padding: 10px 0;
+  color: var(--brandbookColorC);
+`;
+
+export const StyledSocialMediaName = styled.span`
+  font-family: "HEADING";
+  font-size: 32px;
+  padding: 0 20px;
+  color: transparent;
+  transition: color 1s ease;
+  ${StyledFontAwesomeIcon}:hover + & {
+    color: var(--brandbookColorC);
+  }
+`;
+
+export const StyledOptionsDivRight = styled.div`
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+  & ${StyledOptionsRow}:nth-child(1) ${StyledFontAwesomeIcon} :hover {
+    cursor: pointer;
+    transition: color 1s ease-in-out;
+    color: #4267b2;
+  }
+  & ${StyledOptionsRow}:nth-child(2) ${StyledFontAwesomeIcon} :hover {
+    cursor: pointer;
+    transition: color 1s ease-in-out;
+    color: #f56040;
+  }
+  & ${StyledOptionsRow}:nth-child(3) ${StyledFontAwesomeIcon} :hover {
+    cursor: pointer;
+    transition: color 1s ease-in-out;
+    color: #1da1f2;
+  }
+  & ${StyledOptionsRow}:nth-child(4) ${StyledFontAwesomeIcon} :hover {
+    cursor: pointer;
+    transition: color 1s ease-in-out;
+    color: #000000;
+  }
+`;
+
+export const StyledOptionsDivLeft = styled.div`
   width: 48%;
   display: flex;
   flex-direction: column;
-  background-color: yellow;
+  align-items: center;
 `;
 
 export const StyledInformationDiv = styled.div`

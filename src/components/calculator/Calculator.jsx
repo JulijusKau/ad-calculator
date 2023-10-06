@@ -1,20 +1,46 @@
 import {
   StyledBottomDiv,
+  StyledFontAwesomeIcon,
   StyledInformationDiv,
   StyledMainDiv,
-  StyledOptionsDiv,
+  StyledOptionsDivLeft,
+  StyledOptionsDivRight,
+  StyledOptionsRow,
   StyledReusableButton,
+  StyledSocialMediaName,
   StyledTopDiv,
 } from "./StyledCalculator";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faSquareInstagram,
+  faTiktok,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 export const Calculator = () => {
   return (
     <StyledMainDiv>
       <StyledTopDiv>
-        <StyledOptionsDiv></StyledOptionsDiv>
-        <StyledOptionsDiv></StyledOptionsDiv>
+        <StyledOptionsDivLeft></StyledOptionsDivLeft>
+        <StyledOptionsDivRight>
+          <StyledOptionsRow>
+            <StyledFontAwesomeIcon icon={faFacebook} />
+            <StyledSocialMediaName>Facebook</StyledSocialMediaName>
+          </StyledOptionsRow>
+          <StyledOptionsRow>
+            <StyledFontAwesomeIcon icon={faSquareInstagram} />
+            <StyledSocialMediaName>Instagram</StyledSocialMediaName>
+          </StyledOptionsRow>
+          <StyledOptionsRow>
+            <StyledFontAwesomeIcon icon={faTwitter} />
+            <StyledSocialMediaName>Twitter</StyledSocialMediaName>
+          </StyledOptionsRow>
+          <StyledOptionsRow>
+            <StyledFontAwesomeIcon icon={faTiktok} />
+            <StyledSocialMediaName>TikTok</StyledSocialMediaName>
+          </StyledOptionsRow>
+        </StyledOptionsDivRight>
       </StyledTopDiv>
       <StyledBottomDiv>
         <StyledInformationDiv>aaaaaaaaaaaaaa</StyledInformationDiv>
