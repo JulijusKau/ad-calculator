@@ -28,9 +28,14 @@ export const Calculator = () => {
     secondInput: "",
     thirdInput: "",
     fourthInput: "",
+    socialMedia: "",
   });
 
   const [socialMediaOutlet, setSocialMediaOutlet] = useState("");
+
+  const [resultWindowDisplay, setResultWindowDisplay] = useState("none");
+
+  const [inputDisplay, setInputDisplay] = useState(false);
 
   const handleFacebookIconClick = () => {
     setSocialMediaOutlet("FACEBOOK");
@@ -39,8 +44,11 @@ export const Calculator = () => {
       secondInput: "",
       thirdInput: "",
       fourthInput: "",
+      socialMedia: "FACEBOOK",
     });
     document.getElementById("Form").reset();
+    setResultWindowDisplay("none");
+    setInputDisplay(true);
   };
   const handleInstagramIconClick = () => {
     setSocialMediaOutlet("INSTAGRAM");
@@ -49,8 +57,11 @@ export const Calculator = () => {
       secondInput: "",
       thirdInput: "",
       fourthInput: "",
+      socialMedia: "INSTAGRAM",
     });
     document.getElementById("Form").reset();
+    setResultWindowDisplay("none");
+    setInputDisplay(true);
   };
   const handleTwitterIconClick = () => {
     setSocialMediaOutlet("TWITTER");
@@ -59,8 +70,11 @@ export const Calculator = () => {
       secondInput: "",
       thirdInput: "",
       fourthInput: "",
+      socialMedia: "TWITTER",
     });
     document.getElementById("Form").reset();
+    setResultWindowDisplay("none");
+    setInputDisplay(true);
   };
   const handleTikTokIconClick = () => {
     setSocialMediaOutlet("TIK TOK");
@@ -69,8 +83,11 @@ export const Calculator = () => {
       secondInput: "",
       thirdInput: "",
       fourthInput: "",
+      socialMedia: "TIK TOK",
     });
     document.getElementById("Form").reset();
+    setResultWindowDisplay("none");
+    setInputDisplay(true);
   };
 
   return (
@@ -78,9 +95,13 @@ export const Calculator = () => {
       <StyledTopDiv>
         <StyledOptionsDivLeft className="wrapper">
           <Form
+            setInputDisplay={setInputDisplay}
             inputData={inputData}
             setInputData={setInputData}
             socialMedia={socialMediaOutlet}
+            setSocialMedia={setSocialMediaOutlet}
+            setResultWindowDisplay={setResultWindowDisplay}
+            inputDisplay={inputDisplay}
           />
         </StyledOptionsDivLeft>
         <StyledOptionsDivRight className="wrapper">
@@ -172,7 +193,10 @@ export const Calculator = () => {
         </StyledOptionsDivRight>
       </StyledTopDiv>
       <StyledBottomDiv className="wrapper">
-        <ResultWindow />
+        <ResultWindow
+          inputData={inputData}
+          ResultWindowDisplay={resultWindowDisplay}
+        />
       </StyledBottomDiv>
     </StyledMainDiv>
   );
