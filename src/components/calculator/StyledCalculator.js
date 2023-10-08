@@ -12,6 +12,7 @@ export const StyledTopDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 20px;
 `;
 
 export const StyledBottomDiv = styled.div`
@@ -30,8 +31,8 @@ export const StyledOptionsRow = styled.div`
 `;
 
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  width: min(30vw, 50px);
-  height: min(30vw, 50px);
+  width: min(30vw, 60px);
+  height: min(30vw, 60px);
   padding: 10px 0;
   color: var(--brandbookColorC);
   @media (max-width: 650px) {
@@ -44,8 +45,7 @@ export const StyledSocialMediaHeader = styled.span`
   font-family: "TEXT";
   font-size: 25px;
   color: var(--brandbookColorC);
-  /* text-shadow: 3px 3px 0 var(--brandbookColorA); */
-  text-align: left;
+  text-align: center;
   padding-bottom: 20px;
   @media (max-width: 650px) {
     font-size: 15px;
@@ -72,11 +72,10 @@ export const StyledOptionsDivRight = styled.div`
   width: 25%;
   display: flex;
   flex-direction: column;
+  height: 80%;
   border: 0px solid var(--brandbookColorD);
   border-radius: var(--mainBorderRadius);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: var(--mainBoxShadow);
   padding: 20px;
   margin-bottom: var(--mainMarginBottom);
 
@@ -103,10 +102,16 @@ export const StyledOptionsDivRight = styled.div`
 `;
 
 export const StyledOptionsDivLeft = styled.div`
-  width: 48%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 0px solid var(--brandbookColorD);
+  border-radius: var(--mainBorderRadius);
+  box-shadow: var(--mainBoxShadow);
+  padding: 20px;
+  margin-bottom: var(--mainMarginBottom);
+  background-color: var(--brandbookColorB);
 `;
 
 export const StyledInformationDiv = styled.div`
@@ -116,6 +121,7 @@ export const StyledInformationDiv = styled.div`
 `;
 
 export const StyledReusableButton = styled.button`
-  width: 200px;
-  height: 100px;
+  width: 100px;
+  height: 50px;
+  background-color: yellow;
 `;

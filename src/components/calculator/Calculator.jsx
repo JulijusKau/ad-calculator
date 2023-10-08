@@ -1,3 +1,4 @@
+import { Form } from "../form/Form";
 import {
   StyledBottomDiv,
   StyledFontAwesomeIcon,
@@ -25,7 +26,9 @@ export const Calculator = () => {
   return (
     <StyledMainDiv>
       <StyledTopDiv>
-        <StyledOptionsDivLeft></StyledOptionsDivLeft>
+        <StyledOptionsDivLeft className="wrapper">
+          <Form />
+        </StyledOptionsDivLeft>
         <StyledOptionsDivRight className="wrapper">
           <StyledSocialMediaHeader>
             Choose Your Social Media Outlet

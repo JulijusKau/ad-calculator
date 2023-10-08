@@ -5,7 +5,7 @@ export const StyledNavbar = styled.nav`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px 20% 20px 20%;
+  padding: 20px 20% 5px 20%;
 `;
 
 export const StyledNavbarLogo = styled.img`
