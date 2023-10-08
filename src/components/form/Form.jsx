@@ -6,6 +6,7 @@ import {
   StyledInputName,
   StyledSimpleInput,
   StyledSliderInput,
+  StyledSocialMediaOutletName,
 } from "./StyledForm";
 
 export const Form = () => {
@@ -17,7 +18,10 @@ export const Form = () => {
   return (
     <StyledForm>
       <StyledInputDiv>
-        <StyledInputName>FACEBOOK AD SPEND PER WHATEVER</StyledInputName>
+        <StyledInputName>
+          <StyledSocialMediaOutletName>FACEBOOK</StyledSocialMediaOutletName> AD
+          SPEND PER WHATEVER
+        </StyledInputName>
         <StyledInputDescription>
           This is some simple text which can change varying on your social media
           choice.
@@ -31,7 +35,9 @@ export const Form = () => {
       </StyledInputDiv>
       <StyledInputDiv>
         <StyledInputName>
-          INPUT FOR YOUR PERSONAL FACEBOOK THOUGHTS
+          INPUT FOR YOUR PERSONAL{" "}
+          <StyledSocialMediaOutletName>FACEBOOK</StyledSocialMediaOutletName>{" "}
+          THOUGHTS
         </StyledInputName>
         <StyledInputDescription>
           Once again, I am a front-end developer not a marketing specialist.
@@ -40,7 +46,9 @@ export const Form = () => {
       </StyledInputDiv>
       <StyledInputDiv>
         <StyledInputName>
-          SLIDER INPUT NUMBER ONE FACEBOOK STYLE
+          SLIDER INPUT NUMBER ONE{" "}
+          <StyledSocialMediaOutletName>FACEBOOK</StyledSocialMediaOutletName>{" "}
+          STYLE
         </StyledInputName>
         <StyledInputDescription>
           This kind of input is different from the others. Can you spot the
@@ -51,7 +59,9 @@ export const Form = () => {
       </StyledInputDiv>
       <StyledInputDiv>
         <StyledInputName>
-          SLIDER INPUT NUMBER TWO FACEBOOK STYLE
+          SLIDER INPUT NUMBER TWO{" "}
+          <StyledSocialMediaOutletName>FACEBOOK</StyledSocialMediaOutletName>{" "}
+          STYLE
         </StyledInputName>
         <StyledInputDescription>
           This kind of input is different from the others. Can you spot the

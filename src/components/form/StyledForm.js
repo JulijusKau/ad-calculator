@@ -112,3 +112,12 @@ export const StyledFormSubmitButton = styled.button`
     font-size: var(--textFontSizeSmallScreen);
   }
 `;
+
+export const StyledSocialMediaOutletName = styled.span`
+  font-family: "TEXT";
+  font-size: 25px;
+  color: var(--brandbookColorE);
+  @media (max-width: 650px) {
+    font-size: var(--textFontSizeSmallScreen);
+  }
+`;
