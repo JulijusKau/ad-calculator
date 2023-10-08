@@ -23,26 +23,65 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export const Calculator = () => {
+  const [inputData, setInputData] = useState({
+    firstInput: "",
+    secondInput: "",
+    thirdInput: "",
+    fourthInput: "",
+  });
+
   const [socialMediaOutlet, setSocialMediaOutlet] = useState("");
 
   const handleFacebookIconClick = () => {
     setSocialMediaOutlet("FACEBOOK");
+    setInputData({
+      firstInput: "",
+      secondInput: "",
+      thirdInput: "",
+      fourthInput: "",
+    });
+    document.getElementById("Form").reset();
   };
   const handleInstagramIconClick = () => {
     setSocialMediaOutlet("INSTAGRAM");
+    setInputData({
+      firstInput: "",
+      secondInput: "",
+      thirdInput: "",
+      fourthInput: "",
+    });
+    document.getElementById("Form").reset();
   };
   const handleTwitterIconClick = () => {
     setSocialMediaOutlet("TWITTER");
+    setInputData({
+      firstInput: "",
+      secondInput: "",
+      thirdInput: "",
+      fourthInput: "",
+    });
+    document.getElementById("Form").reset();
   };
   const handleTikTokIconClick = () => {
     setSocialMediaOutlet("TIK TOK");
+    setInputData({
+      firstInput: "",
+      secondInput: "",
+      thirdInput: "",
+      fourthInput: "",
+    });
+    document.getElementById("Form").reset();
   };
 
   return (
     <StyledMainDiv>
       <StyledTopDiv>
         <StyledOptionsDivLeft className="wrapper">
-          <Form socialMedia={socialMediaOutlet} />
+          <Form
+            inputData={inputData}
+            setInputData={setInputData}
+            socialMedia={socialMediaOutlet}
+          />
         </StyledOptionsDivLeft>
         <StyledOptionsDivRight className="wrapper">
           <StyledSocialMediaHeader>

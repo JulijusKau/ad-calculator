@@ -121,3 +121,14 @@ export const StyledSocialMediaOutletName = styled.span`
     font-size: var(--textFontSizeSmallScreen);
   }
 `;
+
+export const StyledSliderNumber = styled.div`
+  margin-left: 20px;
+  width: 30px;
+  height: 25px;
+  color: var(--brandbookColorC);
+  background-color: var(--brandbookColorA);
+  font-family: "TEXT";
+  text-align: center;
+  border: 1px solid var(--brandbookColorC);
+`;
