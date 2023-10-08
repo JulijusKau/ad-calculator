@@ -1,13 +1,12 @@
 import { Form } from "../form/Form";
+import { ResultWindow } from "../resultWindow/ResultWindow";
 import {
   StyledBottomDiv,
   StyledFontAwesomeIcon,
-  StyledInformationDiv,
   StyledMainDiv,
   StyledOptionsDivLeft,
   StyledOptionsDivRight,
   StyledOptionsRow,
-  StyledReusableButton,
   StyledSocialMediaHeader,
   StyledSocialMediaName,
   StyledTopDiv,
@@ -51,9 +50,8 @@ export const Calculator = () => {
           </StyledOptionsRow>
         </StyledOptionsDivRight>
       </StyledTopDiv>
-      <StyledBottomDiv>
-        <StyledInformationDiv>aaaaaaaaaaaaaa</StyledInformationDiv>
-        <StyledReusableButton>CLICK ME</StyledReusableButton>
+      <StyledBottomDiv className="wrapper">
+        <ResultWindow />
       </StyledBottomDiv>
     </StyledMainDiv>
   );

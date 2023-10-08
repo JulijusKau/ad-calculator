@@ -5,10 +5,10 @@ export const StyledMainDiv = styled.div`
   padding: 20px var(--mainPaddingLeftRight);
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const StyledTopDiv = styled.div`
-  /* background-color: gray; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,12 +16,11 @@ export const StyledTopDiv = styled.div`
 `;
 
 export const StyledBottomDiv = styled.div`
-  background-color: green;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  border: 0px solid var(--brandbookColorD);
+  border-radius: var(--mainBorderRadius);
+  box-shadow: var(--mainBoxShadow);
+  width: 80%;
+  margin-bottom: 30px;
 `;
 
 export const StyledOptionsRow = styled.div`
@@ -112,16 +111,4 @@ export const StyledOptionsDivLeft = styled.div`
   padding: 20px;
   margin-bottom: var(--mainMarginBottom);
   background-color: var(--brandbookColorB);
-`;
-
-export const StyledInformationDiv = styled.div`
-  height: 70%;
-  width: 50%;
-  background-color: blue;
-`;
-
-export const StyledReusableButton = styled.button`
-  width: 100px;
-  height: 50px;
-  background-color: yellow;
 `;
