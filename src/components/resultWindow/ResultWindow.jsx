@@ -30,7 +30,14 @@ export const ResultWindow = () => {
           PLACEHOLDER. Oh and the text which you have entered was PLACEHOLDER.
         </StyledCalculationsDescription>
       </StyledCalculationsDiv>
-      <StyledContactButton>Contact us!</StyledContactButton>
+      <StyledContactButton>
+        <a
+          style={{ color: "#000000", textDecoration: "none" }}
+          href="https://ad2sky.com/"
+        >
+          Contact us!
+        </a>
+      </StyledContactButton>
     </StyledResultDiv>
   );
 };

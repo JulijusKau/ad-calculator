@@ -59,7 +59,7 @@ export const StyledSocialMediaName = styled.span`
   transition: color 1s ease;
   ${StyledFontAwesomeIcon}:hover + & {
     color: var(--brandbookColorC);
-    text-shadow: 3px 3px 0 var(--brandbookColorA);
+    text-shadow: 0px 0px 0 var(--brandbookColorC);
   }
   @media (max-width: 650px) {
     font-size: 13px;

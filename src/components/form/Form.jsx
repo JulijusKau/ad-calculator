@@ -9,7 +9,7 @@ import {
   StyledSocialMediaOutletName,
 } from "./StyledForm";
 
-export const Form = () => {
+export const Form = ({ socialMedia }) => {
   const handleOnFormSubmitButtonClick = (e) => {
     e.preventDefault();
     console.log("The form has been successfully submitted");
@@ -19,8 +19,10 @@ export const Form = () => {
     <StyledForm>
       <StyledInputDiv>
         <StyledInputName>
-          <StyledSocialMediaOutletName>FACEBOOK</StyledSocialMediaOutletName> AD
-          SPEND PER WHATEVER
+          <StyledSocialMediaOutletName>
+            {socialMedia}
+          </StyledSocialMediaOutletName>{" "}
+          AD SPEND PER WHATEVER
         </StyledInputName>
         <StyledInputDescription>
           This is some simple text which can change varying on your social media
@@ -36,7 +38,9 @@ export const Form = () => {
       <StyledInputDiv>
         <StyledInputName>
           INPUT FOR YOUR PERSONAL{" "}
-          <StyledSocialMediaOutletName>FACEBOOK</StyledSocialMediaOutletName>{" "}
+          <StyledSocialMediaOutletName>
+            {socialMedia}
+          </StyledSocialMediaOutletName>{" "}
           THOUGHTS
         </StyledInputName>
         <StyledInputDescription>
@@ -47,7 +51,9 @@ export const Form = () => {
       <StyledInputDiv>
         <StyledInputName>
           SLIDER INPUT NUMBER ONE{" "}
-          <StyledSocialMediaOutletName>FACEBOOK</StyledSocialMediaOutletName>{" "}
+          <StyledSocialMediaOutletName>
+            {socialMedia}
+          </StyledSocialMediaOutletName>{" "}
           STYLE
         </StyledInputName>
         <StyledInputDescription>
@@ -60,7 +66,9 @@ export const Form = () => {
       <StyledInputDiv>
         <StyledInputName>
           SLIDER INPUT NUMBER TWO{" "}
-          <StyledSocialMediaOutletName>FACEBOOK</StyledSocialMediaOutletName>{" "}
+          <StyledSocialMediaOutletName>
+            {socialMedia}
+          </StyledSocialMediaOutletName>{" "}
           STYLE
         </StyledInputName>
         <StyledInputDescription>
